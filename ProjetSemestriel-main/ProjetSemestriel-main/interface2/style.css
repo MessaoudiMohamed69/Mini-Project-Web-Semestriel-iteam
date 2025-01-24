@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e9e9e9;
+}
+
+footer {
+    font-size: 14px;
+    color: #777;
+}
+
+.search-box {
+    position: relative;
+    width: 30%;
+    margin: 20px auto; /* Centrer la boîte */
+}
+
+/* Style de l'icône */
+.search-box i {
+    position: absolute;
+    top: 50%;
+    left: 15px; /* Positionner l'icône */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #aaa;
+}
+
+/* Champ de recherche */
+.search-input {
+    width: 100%;
+    padding: 10px 15px 10px 40px; /* Espace à gauche pour l'icône */
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Effet lors du focus */
+.search-input:focus {
+    border-color: #1cbfca;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(11, 161, 161);
+    transition: width 0.5s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.card {
+    width: 250px;
+    height: 500px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Assurez-vous que les images ont une hauteur fixe */
+    object-fit: cover; /* Recadrez les images sans déformation */
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li {
+    list-style: none;
+}
+
+.special {
+    margin-left: 50px;
+}
+
+.pied {
+    background-color: #eee;
+}
+
+.titre {
+    color: black;
+    font-size: large;
+}

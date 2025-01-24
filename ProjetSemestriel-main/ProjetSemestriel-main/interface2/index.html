@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interface Airbnb</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/interface2/images/logo_air.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Barre de navigation -->
+        <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="./images/airbnb-logo.webp" alt="Airbnb logo" style="width: 90px;">
+                </a>
+                <div class="search-box ms-3">
+                    <i class="las la-search"></i>
+                    <input type="text" placeholder="Try costa bravo" class="search-input"/>
+                </div>
+                <ul class="navbar-nav me-5">
+                    <li class="nav-item"><a href="#" class="nav-link">Become a host</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Saved</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Trips</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Messages</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
+                </ul>
+                <a href="#"><img src="./images/profile-picture.jpeg" alt="Profile Picture" class="img-fluid ms-3" style="width: 40px; height: 40px; border-radius: 50%;"></a>
+            </div>
+        </header>
+
+        <!-- Contenu principal -->
+        <main class="container my-5">
+            <!-- Section de recherche -->
+            <section class="text-center">
+                <h2>What can we help you find, Edward?</h2>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-2 d-flex">
+                        <img src="./images/homes.jpg" alt="Homes" class="img-fluid w-75 h-50 mb-2">
+                        <button class="btn btn-light h-50">Homes</button>
+                    </div>
+                    <div class="col-md-2 d-flex">
+                        <img src="./images/experiences.webp" alt="Experiences" class="img-fluid mb-2 h-50 w-75">
+                        <button class="btn btn-light h-50">Experiences</button>
+                    </div>
+                    <div class="col-md-2 d-flex">
+                        <img src="./images/Restaurants.jpg" alt="Restaurants" class="img-fluid mb-2 h-50 w-75">
+                        <button class="btn btn-light h-50">Restaurants</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Airbnb Plus -->
+            <section>
+                <div class="row">
+                    <div class="col-md-12">
+                      <h3 class="mt-3">Introducing Airbnb Plus</h3>
+                      <p>A new selection of homes verified for quality & comfort</p>
+                      <img src="./images/Airbnb-Plus-Beyond-by-Airbnb.jpg" alt="Airbnb Plus" class="img-fluid" style="width: 100%; height: 50%">
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Marsala1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Marsala2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Marsala3.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Marsala, Italie</h5>
+                                <p class="card-text">Hote:Antonino <br>19-21 janv. <br><span style="font-weight: bold;">80€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Site archéologique de Carthage1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Site archéologique de Carthage2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Site archéologique de Carthage3.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Site archéologique de Carthage, Tunisie</h5>
+                                <p class="card-text">Hote:Foued <br>19-21 janv. <br><span style="font-weight: bold;">61€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/La Marsa Tunisie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/La Marsa Tunisie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/La Marsa Tunisie3.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">La Marsa, Tunisie</h5>
+                                <p class="card-text">Hote:Bou <br>19-21 janv. <br><span style="font-weight: bold;">22€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Chambre - Sousse1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Chambre - Sousse2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Chambre - Sousse3.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Sousse, Tunisie</h5>
+                                <p class="card-text">Hote:Youssef <br>19-21 janv. <br><span style="font-weight: bold;">29€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls5" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Marettimo, Italie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Marettimo, Italie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Marettimo, Italie3.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Marettimo ,Italie</h5>
+                                <p class="card-text">Hote:Tartarouga <br>19-21 janv. <br><span style="font-weight: bold;">94€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls6" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Carthage, Tunisie.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Carthage, Tunisie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Carthage, Tunisie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Carthage, Tunisie</h5>
+                                <p class="card-text">Hote:Foued <br>19-21 janv. <br><span style="font-weight: bold;">71€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls7" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Nabeul , Tunisie.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Nabeul , Tunisie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Nabeul , Tunisie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Nabeul, Tunisie</h5>
+                                <p class="card-text">Hote:Valérie <br>19-21 janv. <br><span style="font-weight: bold;">98€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Sidi Bou Said, Tunisie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Sidi Bou Said, Tunisie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Sidi Bou Said, Tunisie3.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Sidi Bou Said, Tunisie</h5>
+                                <p class="card-text">Hote:Mekki <br>19-21 janv. <br><span style="font-weight: bold;">162€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls9" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/kélibia, Tunisie.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/kélibia, Tunisie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/kélibia, Tunisie2.jpeg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Hammam Al Agzaz kélibia, Tunisie</h5>
+                                <p class="card-text">Hote:Hefdhi <br>19-21 janv. <br><span style="font-weight: bold;">137€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls10" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Tunis, Tunisie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Tunis, Tunisie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Tunis, Tunisie3.jpeg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls10" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Tunis, Tunisie</h5>
+                                <p class="card-text">Hote:Madame Cherif <br>19-21 janv. <br><span style="font-weight: bold;">79€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls11" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/La Soukra, Tunisie1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/La Soukra, Tunisie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/La Soukra, Tunisie3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls11" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">La Soukra, Tunisie</h5>
+                                <p class="card-text">Hote:Habib <br>19-21 janv. <br><span style="font-weight: bold;">479€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                            <div class="card">
+                              <div id="carouselExampleControls12" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./images/Hergla, Tunisie1.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Hergla, Tunisie2.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./images/Hergla, Tunisie3.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls12" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                             
+                              <div class="card-body">
+                                <h5 class="card-title">Hergla, Tunisie</h5>
+                                <p class="card-text">Hote:Beya <br>19-21 janv. <br><span style="font-weight: bold;">49€ par nuit</span></p>
+                                <a href="#" class="btn btn-primary">Reserver</a>
+                              </div>
+                            </div>
+                
+                          </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="text-center mt-5">
+          <p class="h3">Poursuivez l'exploration des Campagne</p>
+          <button class="mt-3 bg-dark text-light rounded"><a href="#"></a>Afficher plus</button>
+        </section>
+
+        <!-- pied de la page -->
+        <footer class="mt-5 pied pt-5">
+          <div class="container">
+            <div class="row">
+              <!-- Section Assistance -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <ul class="p-0">
+                  <li class="mb-3 titre" style="font-weight: bold;">Assistance</li>
+                  <li><a href="#">Centre d'aide</a></li>
+                  <li><a href="#">AirCover</a></li>
+                  <li><a href="#">Lutte contre la discrimination</a></li>
+                  <li><a href="#">Assistance handicap</a></li>
+                  <li><a href="#">Options d'annulation</a></li>
+                  <li><a href="#">J'ai un problème de voisinage</a></li>
+                </ul>
+              </div>
+        
+              <!-- Section Accueil de voyageurs 1 -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <ul class="p-0">
+                  <li class="mb-3 titre" style="font-weight: bold;">Accueil de voyageurs</li>
+                  <li><a href="#">Mettez votre logement sur Airbnb</a></li>
+                  <li><a href="#">AirCover pour les hôtes</a></li>
+                  <li><a href="#">Ressources pour les hôtes</a></li>
+                  <li><a href="#">Forum de la communauté</a></li>
+                  <li><a href="#">Hébergement responsable</a></li>
+                  <li><a href="#">Participez à un cours gratuit pour les nouveaux hôtes</a></li>
+                  <li><a href="#">Trouver un co‑hôte</a></li>
+                </ul>
+              </div>
+        
+              <!-- Section Accueil de voyageurs 2 -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+                <ul class="p-0">
+                  <li class="mb-3 titre" style="font-weight: bold;">Accueil de voyageurs</li>
+                  <li><a href="#">Mettez votre logement sur Airbnb</a></li>
+                  <li><a href="#">AirCover pour les hôtes</a></li>
+                  <li><a href="#">Ressources pour les hôtes</a></li>
+                  <li><a href="#">Forum de la communauté</a></li>
+                  <li><a href="#">Hébergement responsable</a></li>
+                  <li><a href="#">Participez à un cours gratuit pour les nouveaux hôtes</a></li>
+                  <li><a href="#">Trouver un co‑hôte</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <hr>
+        
+            <div class="row mt-5">
+              <!-- Informations légales -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9">
+                <ul class="p-0 d-flex justify-content-between">
+                  <li>© 2025 Airbnb, Inc.</li>
+                  <li><a href="#">Confidentialité</a></li>
+                  <li><a href="#">Conditions générales</a></li>
+                  <li><a href="#">Plan du site</a></li>
+                  <li><a href="#">Fonctionnement du site</a></li>
+                  <li><a href="#">Infos sur l'entreprise</a></li>
+                </ul>
+              </div>
+        
+              <!-- Réseaux sociaux -->
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <ul class="p-0 d-flex justify-content-center align-items-center">
+                  <li><a href="#"><i class="lab la-facebook-square fs-2 ms-3"></i></a></li>
+                  <li><a href="#"><i class="lab la-instagram fs-2 ms-3"></i></a></li>
+                  <li><a href="#"><i class="lab la-twitter fs-2 ms-3"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </body>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+</html>

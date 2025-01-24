@@ -1,0 +1,106 @@
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.nav-item a:hover {
+    background-color: hsl(0, 15%, 80%);
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.custom-img-size {
+    width: 500px;
+    height: auto;
+}
+
+.menu, .home {
+  text-decoration: underline;
+  color: black;
+}
+
+.discount, .new-price {
+  color: red;
+}
+
+.new-price {
+  display: block;
+}
+
+.add-btn {
+  background-color: black;
+  color: white;
+  margin: 0px 5px;
+  padding: 10px 130px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.add-btn.change-text:hover h4 {
+  content: "Select a size";
+  font-size: 16px;
+}
+
+.add-btn h4 {
+  margin: 0;
+  font-size: 16px;
+  transition: content 0.3s ease;
+}
+
+.frank-club {
+  padding: 5px 15px;
+  background-color: hsl(120, 36%, 69%);
+}
+
+.best-seller {
+  padding: 3px 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.pied {
+  background-color: black;
+  padding: 15px 25px;
+  color: white;
+}
+
+.svg-icon {
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.svg-icon2 {
+  color: white;
+  width: 150px;
+  height: 150px;
+}
+
+.svg-icon3 {
+  color: white;
+  width: 50px;
+  height: 75px;
+}
+
+.form-button {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 5px 120px;
+}
+
+.form-control::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+
+footer {
+  padding: 10px 20px;
+}

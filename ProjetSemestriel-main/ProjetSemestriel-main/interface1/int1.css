@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    overflow-x: hidden; 
+}
+
+.logo {
+    display: flex;              
+    align-items: center;        
+    justify-content: center;
+    border-right: 2px solid black; 
+    height: 40px;
+    line-height: 40px; 
+    padding-right: 15px; 
+}
+
+.navbar {
+    background: linear-gradient(to right, blueviolet, #d2005f, red);
+    color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-menu {
+    display: flex;
+    flex-grow: 1; 
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin: 0 10px; 
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #ffcccb;
+}
+
+.bold-link {
+    border-right: 2px solid black; 
+    padding-right: 15px; 
+}
+
+.auth-links {
+    display: flex;
+    align-items: center; 
+    border-left: 2px solid black; 
+    padding-left: 15px; 
+}
+
+.auth-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    color: #ffcccb;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #d2005f;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.main {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    flex: 1; 
+    width: 100%; 
+}
+
+.main .highlight {
+    color: #d2005f;
+}
+
+.cities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.city {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-align: center;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.city:hover {
+    background-color: #ff4081;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature a {
+    color: black;
+    font-weight: bold;
+}
+
+.america {
+    height: 40px;
+    width: 90px;
+}
+
+.bridge, .hello, .phone {
+    height: 200px; 
+    width: 200px; 
+    border-radius: 50%;
+}
+
+hr {
+    justify-content: center;
+    width: 70%;
+    border: 0;
+    border-top: 2px solid grey;  
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.footer-links a {
+    margin: 0 15px;  
+    text-decoration: none;
+    color: blue;  
+    position: relative;
+    padding-right: 15px;  
+}
+
+.footer-links a:not(:last-child) {
+    border-right: 2px solid gray;  
+}
+
+.footer-links a:hover {
+    color: #d2005f;  
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between; 
+        flex-direction: row; 
+    }
+
+    .logo {
+        order: 1; 
+        flex: 1; 
+        text-align: center;
+        border-right: none;
+    }
+
+    .nav-menu {
+        display: none; 
+        justify-content: flex-start; 
+    }
+
+    .auth-links {
+        order: 3;  
+        text-align: right;
+        border-left: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: transparent; 
+    }
+
+    .nav-menu.show {
+        display: flex; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: blueviolet; 
+        z-index: 1000; 
+    }
+
+    .nav-menu ul {
+        flex-direction: column; 
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0; 
+    }
+
+    .bridge, .hello, .phone {
+        height: 100px; 
+        width: 100px; 
+        border-radius: 50%;
+    }
+}
